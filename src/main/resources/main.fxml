@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller" >
+
+    <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleParseHeader" text="Parse Headers"/>
+    <Button layoutX="150.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleParseCookie" text="Parse Cookie"/>
+    <Label fx:id="label" layoutX="10.0" layoutY="50.0"/>
+
+    <TextArea fx:id="textArea" layoutX="10.0" layoutY="80.0" prefHeight="300" prefWidth="580"/>
+    <Label layoutX="10.0" layoutY="385.0">作者主页：</Label>
+    <Hyperlink fx:id="weblink" layoutX="70.0" layoutY="380.0" text="http://www.pengshiyu.com/" onAction="#handleLinkClick"/>
+</AnchorPane>
+
+
